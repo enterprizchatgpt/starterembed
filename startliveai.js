@@ -1,0 +1,1 @@
+class t{static async loadAndConfigure(t){try{var o=(await import(t.chatbotScriptUrl)).default;const{chatbotScriptUrl:a,...r}=t;o.config(r),console.log("EChatbot loaded and configured from "+t.chatbotScriptUrl)}catch(t){console.error("Error loading the chatbot script:",t)}}static async config(t){for(const o of JSON.parse(t))await this.loadAndConfigure(o)}}export{t as default};
